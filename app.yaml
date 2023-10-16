@@ -1,5 +1,5 @@
 runtime: nodejs16
-service: diklanin-website
+service: default
 
 handlers:
 - url: /
@@ -9,3 +9,8 @@ handlers:
 - url: /(.*)
   static_files: www/\1
   upload: www/(.*)
+
+- url: /(.*)
+  secure: always
+  redirect_http_response_code: 301
+  script: auto
