@@ -276,7 +276,7 @@ body {
 }
 
 .left-text p.dark {
-  color: #3B566E;
+  color: #3b566e;
 }
 
 .padding-bottom-top-60 {
@@ -363,7 +363,6 @@ body {
 }
 
 @media (max-width: 991px) {
-
   html,
   body {
     overflow-x: hidden;
@@ -439,7 +438,6 @@ button.main-button {
 button.main-button:hover {
   background-color: #083b8d;
 }
-
 
 /* 
 ---------------------------------------------
@@ -544,7 +542,7 @@ header
   -o-transition: all 0.4s;
   -webkit-transition: all 0.4s;
   transition: all 0.4s;
-  background-color: #3B566E;
+  background-color: #3b566e;
   display: block;
   position: absolute;
   width: 30px;
@@ -558,7 +556,7 @@ header
   -o-transition: all 0.4s;
   -webkit-transition: all 0.4s;
   transition: all 0.4s;
-  background-color: #3B566E;
+  background-color: #3b566e;
   display: block;
   position: absolute;
   width: 30px;
@@ -605,7 +603,7 @@ header
   -ms-transform: translateY(6px) translateX(1px) rotate(45deg);
   -webkit-transform: translateY(6px) translateX(1px) rotate(45deg);
   transform: translateY(6px) translateX(1px) rotate(45deg);
-  background-color: #3B566E;
+  background-color: #3b566e;
 }
 
 .header-area .main-nav .menu-trigger.active span:after {
@@ -613,7 +611,7 @@ header
   -ms-transform: translateY(-6px) translateX(1px) rotate(-45deg);
   -webkit-transform: translateY(-6px) translateX(1px) rotate(-45deg);
   transform: translateY(-6px) translateX(1px) rotate(-45deg);
-  background-color: #3B566E;
+  background-color: #3b566e;
 }
 
 .header-area.header-sticky {
@@ -633,7 +631,7 @@ header
 }
 
 .header-area.header-sticky .nav li a.active {
-  color: #4285F4;
+  color: #4285f4;
 }
 
 @media (max-width: 1200px) {
@@ -702,7 +700,7 @@ header
     padding: 0px !important;
     border: none !important;
     background: #fff !important;
-    color: #3B566E !important;
+    color: #3b566e !important;
   }
 
   .header-area .main-nav .nav li a:hover {
@@ -837,7 +835,6 @@ welcome
   }
 }
 
-
 /* 
 ---------------------------------------------
 features
@@ -846,8 +843,8 @@ features
 .features-small-item {
   cursor: pointer;
   display: block;
-  background: #FFFFFF;
-  box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.10);
+  background: #ffffff;
+  box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.1);
   -webkit-border-radius: 20px;
   -moz-border-radius: 20px;
   border-radius: 20px;
@@ -942,11 +939,11 @@ parallax & home seperator
 }
 
 .mini:before {
-  content: '';
+  content: "";
   position: absolute;
   width: 140%;
   height: 140%;
-  opacity: .95;
+  opacity: 0.95;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -1029,12 +1026,12 @@ parallax & home seperator
 }
 
 .mini .mini-content .mini-box:before {
-  content: '';
+  content: "";
   position: absolute;
   z-index: -1;
   background: #fff;
   width: 100%;
-  opacity: .15;
+  opacity: 0.15;
   height: 100%;
   bottom: -10px;
   left: 0px;
@@ -1054,7 +1051,7 @@ parallax & home seperator
   font-weight: 400;
   font-size: 14px;
   color: #777;
-  letter-spacing: .75px;
+  letter-spacing: 0.75px;
 }
 
 .mini .mini-content .mini-box strong {
@@ -1073,11 +1070,11 @@ parallax & home seperator
 }
 
 .counter:before {
-  content: '';
+  content: "";
   position: absolute;
   width: 140%;
   height: 140%;
-  opacity: .90;
+  opacity: 0.9;
   background-image: url(../images/fun-facts-bg.png);
   background-repeat: no-repeat;
   background-size: cover;
@@ -1105,7 +1102,7 @@ parallax & home seperator
 }
 
 .counter .content .count-item.decoration-bottom:after {
-  content: '';
+  content: "";
   position: absolute;
   width: 70%;
   height: 32px;
@@ -1123,7 +1120,7 @@ parallax & home seperator
 }
 
 .counter .content .count-item.decoration-top:after {
-  content: '';
+  content: "";
   position: absolute;
   width: 70%;
   height: 32px;
@@ -1218,7 +1215,7 @@ team
 */
 .team-item {
   background: #fff;
-  box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.10);
+  box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.1);
   border-radius: 20px;
   position: relative;
   margin-bottom: 30px;
@@ -1234,13 +1231,15 @@ team
   margin-left: 25px;
   margin-top: 25px;
   font-size: 30px;
-  color: #4E47DE;
+  color: #4e47de;
   text-align: center;
 }
 
 .team-item .user-image {
   width: 60px;
   height: 60px;
+  object-fit: cover;
+  object-position: center;
   overflow: hidden;
   -webkit-border-radius: 100px;
   -moz-border-radius: 100px;
@@ -1297,13 +1296,20 @@ team
   line-height: 26px;
 }
 
+.brandlogotesti {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  object-position: center;
+}
+
 /* 
 ---------------------------------------------
 pricing
 --------------------------------------------- 
 */
 .pricing-item {
-  background: #FFFFFF;
+  background: #ffffff;
   box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.1);
   border-radius: 20px;
   margin-bottom: 30px;
@@ -1435,6 +1441,13 @@ blog
   height: 200px;
 }
 
+.fotoberita {
+  height: 200px;
+  width: 350px;
+  object-fit: cover;
+  object-position: center;
+}
+
 .blog-post-thumb .blog-content {
   margin-top: -30px;
   padding-top: 50px;
@@ -1488,7 +1501,6 @@ blog
   text-align: left;
 }
 
-
 /* 
 ---------------------------------------------
 contact
@@ -1510,7 +1522,7 @@ contact
 .contact-text {
   font-weight: 400;
   font-size: 14px;
-  color: #6F8BA4;
+  color: #6f8ba4;
   letter-spacing: 0.6px;
   line-height: 26px;
 }
@@ -1640,7 +1652,7 @@ preloader
   height: 50px;
 }
 
-#preloader .jumper>div {
+#preloader .jumper > div {
   background-color: #fff;
   width: 10px;
   height: 10px;
@@ -1655,12 +1667,12 @@ preloader
   animation: jumper 1s 0s linear infinite;
 }
 
-#preloader .jumper>div:nth-child(2) {
+#preloader .jumper > div:nth-child(2) {
   -webkit-animation-delay: 0.33333s;
   animation-delay: 0.33333s;
 }
 
-#preloader .jumper>div:nth-child(3) {
+#preloader .jumper > div:nth-child(3) {
   -webkit-animation-delay: 0.66666s;
   animation-delay: 0.66666s;
 }
